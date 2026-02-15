@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Passenger Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <h2>Passenger Booking</h2>
+
+  <form id="bookingForm">
+    <input id="pName" placeholder="Passenger Name" required>
+
+    <select id="pRoute">
+      <option value="Cebu → Danao">Cebu → Danao</option>
+      <option value="Cebu → Naga">Cebu → Naga</option>
+    </select>
+
+    <select id="pBusType">
+      <option value="normal">Normal Bus</option>
+      <option value="series">Air-Conditioned Bus</option>
+    </select>
+
+    <p class="note">
+      Seats are randomized by default. Selection may be added in future versions.
+    </p>
+
+    <button type="submit">Book Ride</button>
+  </form>
+
+  <div id="confirmation" class="hidden">
+    <h3>Booking Successful</h3>
+    <p id="confirmText"></p>
+
+    <h3>Driver & Bus Info</h3>
+    <p id="driverInfo">Waiting for driver assignment...</p>
+
+    <h3>Seat Availability</h3>
+    <div id="seatGrid" class="seat-grid"></div>
+
+    <h3>Estimated Time of Arrival</h3>
+    <p id="etaText">Calculating ETA...</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

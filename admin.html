@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadAdmin()">
+<div class="app">
+  <h2>Admin Panel</h2>
+
+  <button onclick="startSimulation()">Start Simulation</button>
+  <button onclick="resetSystem()">Reset System (Demo)</button>
+
+  <p id="modeStatus">Simulation Inactive</p>
+
+  <h3>Passenger List</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Route</th>
+        <th>Bus Type</th>
+        <th>Fare</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="bookingTable"></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
